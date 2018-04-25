@@ -24,7 +24,6 @@
 *.sublime*
 .sass-cache
 config.rb
-/config.inc.php
 /usr/uploads/
 /usr/*.db
 /usr/plugins/
@@ -32,3 +31,5 @@ config.rb
 /usr/themes/
 !/usr/themes/default
 /tools
+.tags
+.tags_sorted_by_file
