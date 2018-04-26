@@ -36,6 +36,19 @@ $(document).ready(function() {
 		$(".comment-form").addClass("show");
 		$(".respond").addClass("showBtn");
 	});
+
+    // 回到顶部
+    $('.go-top').click(function () {
+        var _this = this;
+        if ($(window).scrollTop() > 100) {
+            $(window).scrollTop(0);
+            $('html,body').animate({scrollTop: 0}, 800, function () {
+                $(_this).css('bottom', '-30px');
+                $(_this).animate({bottom: '50px'}, 800);
+            });
+            $(_this).animate({bottom: '700px'}, 700);
+        }
+    });
 });
 
 (function($){

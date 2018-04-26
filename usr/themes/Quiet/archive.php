@@ -33,7 +33,7 @@
     	<?php endwhile; ?>
         <?php else: ?>
             <article class="post Card typo">
-                <h5 class="post-title"><?php _e('没有找到内容'); ?></h5>
+                <h5 class="post-title ml5"><?php _e('没有找到内容'); ?></h5>
             </article>
         <?php endif; ?>
 

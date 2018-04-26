@@ -1,5 +1,5 @@
 a{
-    color: #37c6C0;
+    color: #36a2e9;
 }
 a:focus,a:hover {
     text-decoration: none;
@@ -33,7 +33,7 @@ a:focus,a:hover {
     line-height: inherit;
     white-space: nowrap;
     font-size: 1.8em;
-    color: #199475;
+    color: #36A2E2;
     font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
 }
 .logo:focus,.logo:hover {
@@ -120,6 +120,8 @@ a:focus,a:hover {
     margin-top: 20px;
     width: 100%;
     text-align: center;
+    background-color: #282828;
+    padding: 10px 0;
 }
 
 .Card {
@@ -166,11 +168,11 @@ p.more a:hover{
     margin-bottom: 10px;
     padding-right: 20px;
 }
-.info{
+.info, footer {
     font-size: 14px;
     color: #a0a0a0;
 }
-.info a{
+.info a, .footer a {
     color: #a0a0a0;
 }
 .info a:hover{
@@ -379,6 +381,9 @@ p.more a:hover{
     margin-right: 0px;
     margin-left: 0px;
 }
+.ml5 {
+    margin-left: 5px;
+}
 /*自定义END*/
 
 /*侧边栏 START*/
@@ -483,3 +488,18 @@ p.more a:hover{
     float: right;
 }
 /*分页END*/
+
+/* 回到顶部 - START */
+.go-top{
+    position:fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 27px;
+    height: 50px;
+    cursor:pointer;
+    background:url(./img/gotop.png) no-repeat;
+}
+.go-top:hover{
+    background:url(./img/gotoprun.png) no-repeat;
+}
+/* 回到顶部 - END */
