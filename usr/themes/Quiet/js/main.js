@@ -3,7 +3,6 @@ $(document).ready(function() {
 	$('.side-info-img').num();//调用头像边框效果
 	$('.hitokoto').hitokoto(); //调用一言
 
-	InstantClick.init();//开启预加载插件 instantclick
 	hljs.initHighlightingOnLoad();//开启代码高亮插件 highlightjs
 
 	var previousscrolltop = 0; //上次滚动条位置

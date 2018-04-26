@@ -19,6 +19,9 @@ define('__TYPECHO_THEME_DIR__', '/usr/themes');
 /** 后台路径(相对路径) */
 define('__TYPECHO_ADMIN_DIR__', '/admin/');
 
+/** 备案号 */
+define('__RECORD_NUMBER__', '闽ICP备18009494号');
+
 /** 设置包含路径 */
 @set_include_path(get_include_path() . PATH_SEPARATOR .
 __TYPECHO_ROOT_DIR__ . '/var' . PATH_SEPARATOR .

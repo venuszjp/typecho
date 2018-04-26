@@ -19,6 +19,8 @@
 <script src="<?php $this->options->themeUrl('js/instantclick.min.js'); ?>"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
+<!-- 开启预加载插件 -->
+<script data-no-instant>InstantClick.init('mousedown');</script>
 
 </body>
 </html>

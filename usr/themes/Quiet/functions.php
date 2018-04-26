@@ -41,9 +41,11 @@ function get_comment_at($coid)
         echo '';
     }
 }
-/*
-* 记录文章浏览量
-*/
+
+/**
+ * 记录文章浏览量
+ * @param Widget_Archive $archive
+ */
 function get_post_view($archive)
 {
     $cid    = $archive->cid;
