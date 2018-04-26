@@ -412,7 +412,9 @@ p.more a:hover{
     border-radius: 10%;
 }
 .side-info-img{
-    background:url(./img/gr.jpeg)no-repeat;
+    background:url(./img/gr.gif) no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%; /* 旧版 Firefox 浏览器 */
     width: 150px;
     height: 150px;
     border: 2px solid #516a357d;

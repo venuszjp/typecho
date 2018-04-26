@@ -5,11 +5,11 @@
         <div class="side-info-img">
         </div>
         <div class="side-info-author">
-        	<span>Cgons</span>
+            <span>Venus</span>
     	</div>
     	<div class="side-info-link">
-        	<a href="mailto:seeindo@163.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true">&nbsp; </i></a>
-        	<a href="https://cgons.com" target="_blank"><i class="fa fa-internet-explorer" aria-hidden="true">&nbsp; </i></a>
+            <a href="mailto:835446988@qq.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true">&nbsp; </i></a>
+            <a href="<?php $this->options->siteUrl(); ?>" target="_blank"><i class="fa fa-internet-explorer" aria-hidden="true">&nbsp; </i></a>
     	</div>
     	<div class="side-info-con">
         	<pre class="hitokoto">无数次寻找，依旧一无所获</pre>

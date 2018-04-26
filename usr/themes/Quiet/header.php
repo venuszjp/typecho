@@ -13,13 +13,18 @@
         'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
+        <!-- 网站icon -->
+        <link rel="icon" href="/favicon-16x16.ico" sizes="16x16" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
         <!-- 使用url函数转换相关路径 -->
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('bootstrap/bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('awesome/css/font-awesome.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/typo.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-        <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css">
         
 
     <!--[if lt IE 9]>

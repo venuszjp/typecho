@@ -35,7 +35,7 @@ $db = new Typecho_Db('Pdo_Mysql', '');
 $db->addServer(array (
   'host' => '127.0.0.1',
   'user' => 'root',
-  'password' => 'Zhu2018',
+  'password' => '123456',
   'charset' => 'utf8',
   'port' => '3306',
   'database' => 'typecho',
