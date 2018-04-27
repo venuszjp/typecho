@@ -117,11 +117,12 @@ a:focus,a:hover {
     }
 }
 .footer{
-    margin-top: 20px;
     width: 100%;
     text-align: center;
     background-color: #282828;
     padding: 10px 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .Card {
