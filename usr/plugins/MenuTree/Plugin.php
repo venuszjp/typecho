@@ -2,8 +2,8 @@
 /**
  * 根据内容标题关系自动生成目录树
  *
- * 使用方法：
- * 在文章某处地方加上<!-- index-menu -->，程序会把这个注释替换成目录树
+ * @uses 使用方法：
+ * 在后台添加文章任意地方加上<!-- index-menu -->，程序会把这个注释替换成目录树
  *
  * 样式：
  * .index-menu         整个目录
@@ -99,7 +99,11 @@ class MenuTree_Plugin implements Typecho_Plugin_Interface
     {
         $html = empty($lastResult) ? $html : $lastResult;
         $html = preg_replace_callback('/<h([1-6])[^>]*>.*?<\/h\1>/s', array('MenuTree_Plugin', 'parseCallback'), $html);
-        $html = preg_replace(self::$pattern, '<div class="index-menu">' . self::buildMenuHtml(self::$tree) . '</div>', $html);
+        $html = preg_replace(
+            self::$pattern,
+            '<div class="index-menu"><h3>目录</h3><hr>' . self::buildMenuHtml(self::$tree) . '</div>',
+            $html
+        );
         self::$id = 1;
         self::$tree = array();
 
@@ -164,6 +168,8 @@ class MenuTree_Plugin implements Typecho_Plugin_Interface
      * 构建目录树，生成索引
      *
      * @access public
+     * @param $tree
+     * @param boolean $include
      * @return string
      */
     public static function buildMenuHtml($tree, $include = true)
