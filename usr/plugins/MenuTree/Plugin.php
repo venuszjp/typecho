@@ -99,7 +99,11 @@ class MenuTree_Plugin implements Typecho_Plugin_Interface
     {
         $html = empty($lastResult) ? $html : $lastResult;
         $html = preg_replace_callback('/<h([1-6])[^>]*>.*?<\/h\1>/s', array('MenuTree_Plugin', 'parseCallback'), $html);
-        $html = preg_replace(self::$pattern, '<div class="index-menu">' . self::buildMenuHtml(self::$tree) . '</div>', $html);
+        $html = preg_replace(
+            self::$pattern,
+            '<div class="index-menu"><h3>目录</h3><hr>' . self::buildMenuHtml(self::$tree) . '</div>',
+            $html
+        );
         self::$id = 1;
         self::$tree = array();
 
@@ -164,6 +168,8 @@ class MenuTree_Plugin implements Typecho_Plugin_Interface
      * 构建目录树，生成索引
      *
      * @access public
+     * @param $tree
+     * @param boolean $include
      * @return string
      */
     public static function buildMenuHtml($tree, $include = true)

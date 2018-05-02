@@ -504,3 +504,31 @@ p.more a:hover{
     background:url(./img/gotoprun.png) no-repeat;
 }
 /* 回到顶部 - END */
+
+
+/* 目录树 - START - */
+.index-menu {
+    position: fixed;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #f9f5f5;
+    box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0 20px 70px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 5px 15px 20px 15px;
+}
+
+.index-menu hr {
+    /*border: 1px dashed #E7E7E7;*/
+    margin-bottom: 15px;
+}
+
+.index-menu ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.index-menu li ul {
+    margin-left: 1em;
+    list-style-type: none;
+}
+/* 目录树 - END - */
