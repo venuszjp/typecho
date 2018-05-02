@@ -26,22 +26,6 @@ $(document).ready(function () {
 });
 
 (function ($) {
-    $.fn.hitokoto = function () {
-        var _this = $(this);
-        var isSsl = 'https:' === document.location.protocol ? true : false;
-        if (isSsl) {
-            var url = 'https://sslapi.hitokoto.cn/?encode=text';
-        } else {
-            var url = 'http://api.hitokoto.cn/?encode=text';
-        }
-        $.get(url, function (result) {
-            _this.text(result);
-        });
-    }
-})(jQuery);
-
-
-(function ($) {
     $.fn.num = function (options) {
         var _this = $(this);
         var _thisTop, _thisRight, _thisBottom, _thisLeft, _thisTopBottom, _thisRightLeft, _thisAll;
