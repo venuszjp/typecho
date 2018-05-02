@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     $('.side-info-img').num();//调用头像边框效果
-    $('.hitokoto').hitokoto(); //调用一言
 
     hljs.initHighlightingOnLoad();//开启代码高亮插件 highlightjs
 
@@ -26,22 +25,6 @@ $(document).ready(function () {
 });
 
 (function ($) {
-    $.fn.hitokoto = function () {
-        var _this = $(this);
-        var isSsl = 'https:' === document.location.protocol ? true : false;
-        if (isSsl) {
-            var url = 'https://sslapi.hitokoto.cn/?encode=text';
-        } else {
-            var url = 'http://api.hitokoto.cn/?encode=text';
-        }
-        $.get(url, function (result) {
-            _this.text(result);
-        });
-    }
-})(jQuery);
-
-
-(function ($) {
     $.fn.num = function (options) {
         var _this = $(this);
         var _thisTop, _thisRight, _thisBottom, _thisLeft, _thisTopBottom, _thisRightLeft, _thisAll;
@@ -53,8 +36,8 @@ $(document).ready(function () {
             Type: 'num',
             Color: '#219a26',
             speed: 300,
-        }
-        var options = $.extend({}, defaults, options)
+        };
+        var options = $.extend({}, defaults, options);
         var becurr = "background:" + options.Color + ";position:absolute;border-radius:10px;opahide;";
 
         num();//执行
@@ -63,13 +46,13 @@ $(document).ready(function () {
             var obj = new Object();
             obj.name = '123';
             obj.thsn = function () {
-                _thisTop = _this.find('.divTop').stop().show()
-                _thisRight = _this.find('.divRight').stop().show()
-                _thisBottom = _this.find('.divBottom').stop().show()
-                _thisLeft = _this.find('.divLeft').stop().show()
-                _thisTopBottom = _this.find('.divTop,.divBottom').stop().show()
-                _thisRightLeft = _this.find('.divLeft,.divRight').stop().show()
-                _thisAll = _this.find('.divTop,.divBottom,.divLeft,.divRight').stop().show()
+                _thisTop = _this.find('.divTop').stop().show();
+                _thisRight = _this.find('.divRight').stop().show();
+                _thisBottom = _this.find('.divBottom').stop().show();
+                _thisLeft = _this.find('.divLeft').stop().show();
+                _thisTopBottom = _this.find('.divTop,.divBottom').stop().show();
+                _thisRightLeft = _this.find('.divLeft,.divRight').stop().show();
+                _thisAll = _this.find('.divTop,.divBottom,.divLeft,.divRight').stop().show();
             };
             return obj;
         }
@@ -77,13 +60,13 @@ $(document).ready(function () {
         var opashow = 'opashow', opahide = 'opahide';
 
         function num() {
-            // top杈规
+            // top
             var divTop = "<div style='" + becurr + "top:-2px;left:" + n1 / 2 + "px;width:0;height:2px' class='divTop'></div>";
-            // right杈规
+            // right
             var divRight = "<div style='" + becurr + "top:" + h1 / 2 + "px;right:-2px;width:2px;height:0;' class='divRight'></div>";
-            // Bottom杈规
+            // Bottom
             var divBottom = "<div style='" + becurr + "bottom:-2px;right:" + n1 / 2 + "px;width:0;height:2px' class='divBottom'></div>";
-            // Left杈规
+            // Left
             var divLeft = "<div style='" + becurr + "bottom:" + h1 / 2 + "px;left:-2px;width:2px;height:0;' class='divLeft'></div>";
             _this.hover(function () {
                 el = $(this);
