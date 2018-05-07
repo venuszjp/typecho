@@ -192,6 +192,11 @@ pre {
   -webkit-overflow-scrolling: touch;
 }
 
+/* 覆盖底部 margin-bottom */
+pre code ol {
+  margin-bottom: 0!important;
+}
+
 /* 一致化 horizontal rule */
 hr {
   border: none;
