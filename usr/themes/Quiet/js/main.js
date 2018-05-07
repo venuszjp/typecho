@@ -2,6 +2,11 @@ $(document).ready(function () {
 
     $('.side-info-img').num();//调用头像边框效果
 
+    // 文章中的代码添加行号
+    $('pre code').each(function(){
+        $(this).html("<ol><li>" + $(this).html().replace(/\n/g, "\n</li><li>") + "</li></ol>")
+    });
+
     hljs.initHighlightingOnLoad();//开启代码高亮插件 highlightjs
 
     $(".comment-textarea").focus(function () {
