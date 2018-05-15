@@ -511,7 +511,7 @@ p.more a:hover{
     position: fixed;
     left: 0;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: #f9f5f5;
+    background-color: white;
     box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0 20px 70px 8px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     padding: 5px 15px 20px 15px;
