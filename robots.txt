@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /tools
+Disallow: /var/
+Disallow: /usr/plugins
+Sitemap: https://www.zhujp.me/sitemap.xml
