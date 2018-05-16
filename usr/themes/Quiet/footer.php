@@ -9,7 +9,6 @@
     <em>
         &copy; <?php echo date('Y'); ?>
         <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
-        <?= __RECORD_NUMBER__; ?>
     </em>
 </footer><!-- end #footer -->
 
